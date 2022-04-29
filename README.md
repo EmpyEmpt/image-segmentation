@@ -1,5 +1,5 @@
 ## Semantic segmentation
-Just the background removal though...
+Just the background removal using U-Net...
 
 | Work-progress tasks                     | Completion |
 | --------------------------------------- | ---------- |
