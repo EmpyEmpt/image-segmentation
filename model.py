@@ -1,7 +1,6 @@
 # Classic U-Net in TF2 and Keras
 import tensorflow as tf
 import config as cfg
-from types import Tuple
 from tensorflow.keras.layers import Conv2D
 from tensorflow.keras.layers import BatchNormalization
 from tensorflow.keras.layers import Activation
@@ -39,7 +38,7 @@ def decoder_block(input, skip_features, num_filters):
     return x
 
 
-def build_unet(input_shape: Tuple = cfg.INPUT_SHAPE):
+def build_unet(input_shape=cfg.INPUT_SHAPE):
     """Build a U-Net with 4 encoder/decoder blocks"""
     inputs = Input(input_shape)
 
@@ -76,4 +75,7 @@ def iou_coeff(y_true, y_pred):
 
 def load_model(path: str = cfg.MODEL_PATH):
     """Loads TF model from a given path"""
-    return tf.keras.models.load_model(path)
+    custom_objects = {"iou_coeff": iou_coeff}
+    with tf.keras.utils.custom_object_scope(custom_objects):
+        model = tf.keras.models.load_model(path)
+    return model
