@@ -1,4 +1,13 @@
 ./data/
+./__pycache__/
+./images/
+
+.dockerignore
+.gitattributes
+.gitignore
+Dockerfile
+
+Main.ipynb
 coco.sh
 README.md
 testing.ipynb
