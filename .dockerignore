@@ -1,12 +1,15 @@
 ./data/
 ./__pycache__/
 ./images/
+./.dvc/
 
 .dockerignore
 .gitattributes
 .gitignore
+.dvcignore
 Dockerfile
 
+data.dvc
 Main.ipynb
 coco.sh
 README.md
