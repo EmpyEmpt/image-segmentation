@@ -19,7 +19,7 @@ Explanations and work demonstation can be found in [Example.ipynb](https://githu
 - docker container availible at [dockerhub](https://hub.docker.com/repository/docker/empyempt/fbr)  
 
 ~~~bash
-docker pull empyempt/fbg:latest
+docker pull empyempt/fbr:latest
 ~~~
 
 ## Dataset: 
