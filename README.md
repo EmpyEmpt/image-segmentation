@@ -1,23 +1,32 @@
-## Semantic segmentation
-Just the background removal using U-Net...
+# Background removal 
+Removed background from a photo with a person, leaving only the head in it
 
-| Work-progress tasks                     | Completion |
-| --------------------------------------- | ---------- |
-| Decide on an architecture (model)       | Yep ✅      |
-| Decide on a dataset                     | Yep ✅      |
-| Annotate/Transform dataset              | Yep ✅      |
-| Train model                             | Somewhat 💭 |
-| Flask&Docker                            | Somewhat 💭 |
-| Make repo look nice                     | Nope ❌     |
-| Present everything in a single notebook | Somewhat 💭 |
+Ex:
+| Photo                         | Mask                        | Removed                        |
+| ----------------------------- | --------------------------- | ------------------------------ |
+| ![Photo](./static/input.jpeg) | ![mask](./static/mask.jpeg) | ![output](./static/output.png) |
 
 
-| End-goal tasks:                                                                                    | Completion |
-| -------------------------------------------------------------------------------------------------- | ---------- |
-| Описаны все найденные датасеты для этой задачи                                                     | Yep ✅      |
-| Описаны все текущие реализации (в первую очередь доступные в виде открытых решений и репозиториев) | Yep ✅      |
-| Реализован подход к обработке данных                                                               | Yep ✅      |
-| Реализован выбранные вам алгоритм (можно использовать готовые открытые компоненты)                 | Yep ✅      |
-| Реализован механизм разделения на тренировочную и тестовую выборки                                 | Yep ✅      |
-| Рассчитаны метрики на тренировочном и тестовом датасете                                            | Nope ❌     |
-| Представлен результат в виде репозитория или ноутбука                                              | Nope ❌     |
+## Test task (?)
+Explanations and work demonstation can be found in [Example.ipynb](https://github.com/EmpyEmpt/image-segmentation/blob/64fe55f7a0554732aaf1d136b44b283eb1a29e5f/Main.ipynb)  
+
+## Usage:
+- git clone
+- pip install -r requirements.txt
+- python3 main.py
+- send POST request to /facial-landmark-detection with 'image' parameter
+- interactive web verison availible at /
+- docker container availible at [dockerhub](https://hub.docker.com/repository/docker/empyempt/fbr)  
+
+~~~bash
+docker pull empyempt/fbg:latest
+~~~
+
+## Dataset: 
+[Face/Head Segmentation Dataset Community Edition](https://store.mut1ny.com/product/face-head-segmentation-dataset-community-edition?v=21412759b93b)
+
+Exact images, compressed images and .csv files can be pulled via [DVC](https://dvc.org/)
+~~~bash
+dvc pull
+~~~
+
