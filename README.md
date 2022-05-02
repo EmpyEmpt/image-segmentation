@@ -1,5 +1,5 @@
 # Background removal 
-Removed background from a photo with a person, leaving only the head in it
+Removes background from a photo with a person, leaving only the head in it
 
 Ex:
 | Photo                         | Mask                        | Removed                        |
@@ -25,7 +25,7 @@ docker pull empyempt/fbr:latest
 ## Dataset: 
 [Face/Head Segmentation Dataset Community Edition](https://store.mut1ny.com/product/face-head-segmentation-dataset-community-edition?v=21412759b93b)
 
-Exact images, compressed images and .csv files can be pulled via [DVC](https://dvc.org/)
+Exact images, and compressed files can be pulled via [DVC](https://dvc.org/)
 ~~~bash
 dvc pull
 ~~~
