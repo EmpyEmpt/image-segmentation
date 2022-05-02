@@ -8,7 +8,7 @@ Ex:
 
 
 ## Test task (?)
-Explanations and work demonstation can be found in [Example.ipynb](https://github.com/EmpyEmpt/image-segmentation/blob/64fe55f7a0554732aaf1d136b44b283eb1a29e5f/Main.ipynb)  
+Explanations and work demonstation can be found in [Example.ipynb](https://github.com/EmpyEmpt/image-segmentation/blob/920f7ca434d642ae4f7cbb39bbfed4ecc7204315/Main.ipynb#L31)  
 
 ## Usage:
 - git clone
