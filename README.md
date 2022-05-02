@@ -14,7 +14,7 @@ Explanations and work demonstation can be found in [Example.ipynb](https://githu
 - git clone
 - pip install -r requirements.txt
 - python3 main.py
-- send POST request to /facial-landmark-detection with 'image' parameter
+- send POST request to /background-separation with 'image' parameter
 - interactive web verison availible at /
 - docker container availible at [dockerhub](https://hub.docker.com/repository/docker/empyempt/fbr)  
 
